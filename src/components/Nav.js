@@ -6,7 +6,9 @@ const Nav = (props) => {
     <div className="navMenu">
       <NavLink className="navLink" exact to="/" activeClassName="active">Home</NavLink>
       <NavLink className="navLink" to="/about">About</NavLink>
-      <NavLink className="navLink" to="/stories">Stories</NavLink>
+      <NavLink className="navLink" to="/articles">Articles</NavLink>
+      <NavLink className="navLink" to="/feathers-service">Feathers</NavLink>
+      <NavLink className="navLink" to="/posts">Posts</NavLink>
       <NavLink className="navLink" to="/fghfghfhg">404</NavLink>
       <NavLink className="navLink" to="/create">Create</NavLink>
       <NavLink className="navLink" to="/create/add-content">Add Content</NavLink>

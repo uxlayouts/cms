@@ -1,7 +1,40 @@
 body {
+  background: #f4f4f4;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.page {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+  padding: calc(62px + 3rem) 3rem 3rem 3rem;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  &.missed {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background: url("../img/404-arcade.gif") no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    h1 {
+      color: #ffffff;
+      font-size: 20vw;
+    }
+  }
+}
+
+.item{
+  min-height: 300px;
+  background: #ffffff;
+  border-radius: .2rem;
+  box-shadow: 0 4px 8px 0 rgba(144,159,179,.4);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .pageWrapper {
@@ -41,14 +74,12 @@ body {
 
   .pageBody {
     min-height: 100vh;
-    padding: 2rem;
   }
 
   .pageContent{
     min-height: 100vh;
     float: left;
     background: #f4f4f4;
-    padding: 2rem;
     width: calc( 100vw - 240px );
   }
 

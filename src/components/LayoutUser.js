@@ -4,6 +4,7 @@ import { func, shape, arrayOf, string } from 'prop-types';
 import TransitionGroup from 'react-transition-group/TransitionGroup';
 import AnimatedSwitch from './AnimatedSwitch';
 import Header from './Header';
+import Footer from './Footer';
 import './assets/scss/styles.css';
 
 const LayoutUser = ({ route, location }) => (
@@ -16,6 +17,7 @@ const LayoutUser = ({ route, location }) => (
         </AnimatedSwitch>
       </TransitionGroup>
     </div>
+    <Footer />
   </div>
 );
 
